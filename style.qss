@@ -1,0 +1,48 @@
+QLabel, QPushButton {
+    font-family: "Century Gothic";
+}
+
+#current_balance_label {
+    font-weight: bold;
+}
+
+#balance {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#tracked_date {
+    font-size: 10px;
+}
+
+#add_transaction_btn {
+    background-color: #007acc;
+    color: white;
+    font-weight: bold;
+}
+
+#add_transaction_btn:hover {
+    background-color: #084670;
+}
+
+#edit_btn {
+    background-color: #947a23;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#edit_btn:hover {
+    background-color: #685515;
+}
+
+#delete_btn {
+    background-color: #a72020;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#delete_btn:hover {
+    background-color: #6e1212;
+}
