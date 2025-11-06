@@ -159,7 +159,7 @@ class FinanceTracker(QWidget):
         """Load the database and display contents to table"""
         conn = get_connection()
         cursor = conn.cursor()
-        cursor.execute("SELECT id, date, type, category, amount, note FROM transactions ORDER BY id DESC")
+        cursor.execute("SELECT id, date, type, category, amount, note FROM transactions ORDER BY date ASC")
         rows = cursor.fetchall()
         conn.close()
 
@@ -175,7 +175,7 @@ class FinanceTracker(QWidget):
         
         # ---- Initialize Balance and Tracked Since Values ----
         balance = 0
-        tracked_since_date = rows[-1][1]
+        tracked_since_date = rows[0][1]
 
         for i, row in enumerate(rows):
             trans_id, date, ttype, category, amount, note = row
